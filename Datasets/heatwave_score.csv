@@ -1,0 +1,29 @@
+State,Air Pollution Index,Carbon Emission Impact Score,Wellness and Healthcare Index,Groundwater Sustainability Score,Population Density Index,Rainfall Sufficiency Index,Temperature Variation Score,Heatwave Susceptiblity Score,Category,lat,lon
+Andhra Pradesh,0.3204,0.4652,0.3809,0.9269,0.4215,0.1815,1,0.54904,High Susceptibility,15.91N,79.74E
+Arunachal,0.1885,0.6985,0.1709,0.5478,0.0039,1,0.6066,0.43537,Moderate Susceptibility,28.22N,94.73E
+Assam,0.2781,0.5536,0.3872,1,0.1536,0.7132,0.8073,0.538655,High Susceptibility,26.20N,92.94E
+Bihar,0.6564,0.1581,0.3581,0.6981,0.5195,0.2323,0.898,0.526455,High Susceptibility,25.96N,85.27E
+Chattisgarh,0.5079,0.6103,0.3152,0.5657,0.1252,0.2924,0.9237,0.50434,High Susceptibility,21.28N,81.87E
+Goa,0.1426,0.1791,0.0046,0.4031,0.0043,0.8552,0.9671,0.36884,Moderate Susceptibility,15.30N,74.12E
+Gujarat,0.4534,0.3108,0.4229,0.5565,0.3003,0.1354,0.9705,0.4864,Moderate Susceptibility,22.67N,71.57E
+Haryana,0.5837,0.5795,0.2055,0.2514,0.1242,0,0.8802,0.425115,Moderate Susceptibility,29.06N,76.09E
+Himachal Pradesh,0.2677,0.4663,0.1711,0.3867,0.0314,0.2533,0.2274,0.249955,Low Susceptibility,32.10N,77.56E
+Jammu & Kashmir,0.3449,0.3375,0.2509,0.4818,0.0599,0.2123,0.2035,0.25909,Low Susceptibility,33.28N,75.34E
+Jharkhand,0.8246,0.3765,0.2213,0.5254,0.1625,0.271,0.8828,0.493935,Moderate Susceptibility,23.69N,85.27E
+Karnataka,0.3336,0.3072,0.6204,0.5034,0.3036,0.9978,0.931,0.57104,High Susceptibility,15.32N,75.71E
+Kerala,0.1292,0.042,0.1905,0.5207,0.1646,0.8297,0.9458,0.403145,Moderate Susceptibility,10.16N,76.64E
+Madhya Pradesh,0.4238,0.3641,0.5055,0.5646,0.3615,0.2346,0.9119,0.510535,High Susceptibility,22.97N,78.66E
+Maharashtra,0.5205,0.228,0.4428,0.6662,0.5611,0.1228,0.9618,0.53412,High Susceptibility,19.75N,75.71E
+Manipur,0.2369,0.5744,0.0328,0.4022,0.0113,0.6622,0.6546,0.36567,Moderate Susceptibility,24.66N,93.91E
+Meghalaya,0.1744,0.4967,0.1806,0.5498,0.0118,0.6622,0.7464,0.400005,Moderate Susceptibility,25.47N,91.37E
+Mizoram,0.0427,0.2244,0.104,0.4217,0.0024,0.6622,0.736,0.311615,Moderate Susceptibility,23.16N,92.94E
+Nagaland,0.169,0.8353,0.04,0.4858,0.0069,0.6622,0.6319,0.39886,Moderate Susceptibility,26.16N,94.56E
+Odhisha,0.2653,0.5204,0.5494,0.6362,0.2076,0.3224,0.9254,0.512345,High Susceptibility,20.24N,84.27E
+Punjab,0.6126,0.9874,0.2505,0,0.1362,0.0219,0.8561,0.471415,Moderate Susceptibility,31.15N,75.34E
+Rajasthan,0.5706,0.3289,0.6954,0.3922,0.341,0.0445,0.9193,0.517915,High Susceptibility,27.02N,74.22E
+Sikkim,0.2835,0.189,0.0411,0.7516,0,0.7728,0,0.22948,Low Susceptibility,27.35N,88.32E
+Tamilnadu ,0.2838,0.2583,0.3371,0.4628,0.3591,0.1433,0.9894,0.444235,Moderate Susceptibility,11.13N,78.66E
+Tripura,0.2835,0.4929,0.0999,0.7214,0.0154,0.1556,0.8733,0.396115,Moderate Susceptibility,23.56N,91.68E
+Uttar Pradesh,0.7177,0.2762,0.9355,0.5517,1,0.3255,0.9069,0.70851,Very High Susceptibility,27.57N,80.10E
+Uttarakhand,0.7191,0.442,0.2092,0.5182,0.0476,0.6622,0.4051,0.411745,Moderate Susceptibility,30.07N,79.02E
+West Bengal,0.6753,0.4156,0.312,0.9617,0.4551,0.7728,0.9171,0.63557,High Susceptibility,22.99N,87.86E

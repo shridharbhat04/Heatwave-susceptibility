@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatwave Susceptabilty</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <a href="#" onclick="showPage('about')">About</a>
+        <a href="#" onclick="showPage('global-temperature')">Global Temperature</a>
+        <a href="#" onclick="showPage('india-heatwave')">India's Heatwave Score</a>
+        <a href="#" onclick="showPage('heatwave-pred')">Heatwave Score Prediction</a>
+        <a href="#" onclick="showPage('visualizations')">Visualisations</a>
+        <a href="#" onclick="showPage('chatbot')">Chatbot</a>
+    </div>
+
+    <div class="content">
+
+        <div id="about" class="page" style="text-align: left; margin-left: 30px;">
+            <div style="text-align: center;">
+                <h1><u>About Heatwaves and Climate Impact</u></h1>
+            </div>
+
+            <section>
+                <h2>What is a Heatwave?</h2>
+                <p>A heatwave is a prolonged period of excessively hot weather, which may be accompanied by high humidity. These extreme temperatures are considered dangerous and can pose severe health risks. Heatwaves are characterized by temperatures significantly higher than the usual climate for a specific area. The duration of a heatwave can vary, but typically it lasts for several consecutive days.</p>
+            </section>
+
+            <section>
+                <h2>Impact of Heatwaves</h2>
+                <p>Heatwaves are becoming more frequent and intense due to the global climate crisis. They pose a variety of risks to both human health and the environment. Here are some key impacts:</p>
+                
+                <ul>
+                    <li><span class="highlight">Health Risks:</span></li>
+                    <ul>
+                        <li><strong>Heat Stress and Stroke:</strong> Extended exposure to high temperatures can lead to heat exhaustion, heat stroke, dehydration, and even death.</li>
+                        <li><strong>Respiratory and Cardiovascular Strain:</strong> The combination of heat and air pollution worsens respiratory issues like asthma and heart conditions, especially among vulnerable populations.</li>
+                        <li><strong>Vulnerable Groups:</strong> Elderly people, children, people with pre-existing medical conditions, and outdoor workers are particularly susceptible to heat-related illnesses.</li>
+                    </ul>
+
+                    <li><span class="highlight">Environmental Effects:</span></li>
+                    <ul>
+                        <li><strong>Droughts and Water Shortages:</strong> Heatwaves often lead to reduced rainfall, causing droughts and significant water scarcity, which negatively impacts agriculture and local ecosystems.</li>
+                        <li><strong>Wildfires:</strong> High temperatures can ignite wildfires, leading to massive environmental destruction and loss of life.</li>
+                        <li><strong>Agricultural Loss:</strong> Crops suffer from high temperatures, resulting in lower agricultural yields and higher food prices.</li>
+                    </ul>
+
+                    <li><span class="highlight">Economic Consequences:</span></li>
+                    <ul>
+                        <li><strong>Energy Demands:</strong> The demand for air conditioning and cooling systems increases dramatically, which may strain energy supplies and increase electricity costs.</li>
+                        <li><strong>Healthcare System Burden:</strong> Hospitals and healthcare systems face increased demand during heatwaves, dealing with a surge in patients with heat-related illnesses.</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Factors Contributing to Increased Heatwave Frequency</h2>
+                <ul>
+                    <li><strong>Global Warming:</strong> Human-induced climate change, primarily caused by carbon emissions from industries, deforestation, and transportation, is leading to rising global temperatures. As the planet heats up, so does the frequency of heatwaves.</li>
+                    <li><strong>Urban Heat Islands:</strong> Cities tend to trap more heat due to their dense infrastructure and concrete surfaces. These areas often experience much higher temperatures than surrounding rural areas.</li>
+                    <li><strong>Climate Change:</strong> Climate models predict that many regions will experience more frequent and intense heatwaves due to rising greenhouse gas concentrations in the atmosphere.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>How to Mitigate Heatwave Risks?</h2>
+                <ul>
+                    <li><strong>Early Warning Systems:</strong> Implementing heatwave early warning systems can help communities prepare in advance by providing alerts about extreme temperature events.</li>
+                    <li><strong>Cooling Centers:</strong> Establishing community cooling centers can provide refuge for vulnerable populations during heatwaves.</li>
+                    <li><strong>Green Spaces:</strong> Urban greening projects like planting trees, creating parks, and building green rooftops can help cool cities and reduce the urban heat island effect.</li>
+                    <li><strong>Public Awareness:</strong> Educating the public about the risks of heatwaves and how to stay hydrated, cool, and safe during extreme temperatures is crucial for reducing health impacts.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Heatwave Susceptibility Score (HSS)</h2>
+                <p>In this visualization tool, we present the <span class="highlight">Heatwave Susceptibility Score (HSS)</span> for different regions and states. This score evaluates a region’s vulnerability to heatwaves based on factors such as:</p>
+                <ul>
+                    <li>Temperature variability</li>
+                    <li>Air pollution levels</li>
+                    <li>Groundwater sustainability</li>
+                    <li>Population density</li>
+                    <li>Healthcare system accessibility</li>
+                </ul>
+                <p>Higher scores indicate regions that are more at risk for extreme heat events. This information helps local governments and communities better prepare and mitigate the potential impacts of heatwaves.</p>
+            </section>
+
+            <section>
+                <h2>Importance of the Heatwave Susceptibility Score (HSS) to Society</h2>
+                <ul>
+                    <li><strong>Public Health Protection:</strong> The project helps safeguard vulnerable populations by providing early warnings of heat-related health risks.</li>
+                    <li><strong>Early Warning and Crisis Management:</strong>It equips local authorities with the tools to prepare and respond effectively to heatwave events.</li>
+                    <li><strong>Resource Allocation and Planning:</strong>The project enables better allocation of resources and targeted interventions in high-risk areas.</li>
+                    <li><strong>Raising Climate Awareness:</strong>It raises awareness about the increasing frequency of heatwaves due to climate change, urging action.</li>
+                    <li><strong>Supporting Vulnerable Populations:</strong>The project identifies areas where vulnerable groups need support, ensuring they stay safe during extreme heat.</li>
+                    <li><strong>Sustainability and Long-Term Resilience</strong>It promotes climate-resilient urban infrastructure and sustainable practices to cope with future heatwaves.</li>
+                    <li><strong>Economic Benefits:</strong>The project reduces the economic impact of heatwaves by lowering healthcare costs and preventing disruptions.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>What Can You Do?</h2>
+                <ul>
+                    <li><strong>Stay Hydrated:</strong> Drink plenty of water to stay hydrated.</li>
+                    <li><strong>Avoid Direct Sun Exposure:</strong> Stay indoors during the hottest parts of the day.</li>
+                    <li><strong>Use Air Conditioning or Fans:</strong> Use cooling methods to reduce your body temperature.</li>
+                    <li><strong>Check on Vulnerable Neighbors:</strong> Ensure elderly neighbors or those with health conditions are safe during heatwaves.</li>
+                    <li><strong>Advocate for Change:</strong> Support policies that address climate change, reduce emissions, and invest in urban cooling measures.</li>
+                </ul>
+                <p>By understanding the risks and taking proactive measures, we can mitigate the effects of heatwaves and better prepare for the challenges ahead.</p>
+            </section>
+        </div>
+
+        <div id="global-temperature" class="page">
+            <h1><u>Global Temperature Visualization</u></h1><br>
+            
+            <div class="dropdown-box">
+                <p id="dropdown-label">Click Below to Change Year</p>
+                <select id="year-selector"></select>
+            </div>
+
+            <div id="map"></div>
+        </div>
+
+        <div class="page" id="india-heatwave">
+            <br><u><h1>Heatwave Susceptabilty Score of States of India</h1></u>
+
+            <div id="india-map"></div>
+        </div>
+
+        <div class="page" id="heatwave-pred">
+            <h1><u>Heatwave Susceptabilty Score Prediction</u></h1>
+            <div class="chatbot-container">
+                <label for="API">Enter Air Pollution Index</label>
+                <input type="text" id="API">
+                <label for="CEIS">Enter Carbon Emission Impact Score</label>
+                <input type="text" id="CEIS">
+                <label for="WHI">Enter Wellness and Healthcare Index</label>
+                <input type="text" id="WHI">
+                <label for="GSS">Enter Groundwater Sustainability Score</label>
+                <input type="text" id="GSS">
+                <label for="PDI">Enter Population Density Index</label>
+                <input type="text" id="PDI">
+                <label for="RSI">Enter Rainfall Sufficiency Index</label>
+                <input type="text" id="RSI">
+                <label for="TVS">Enter Temperature Variation Score</label>
+                <input type="text" id="TVS">
+                <button id="submitButton">Predict HSS</button>
+                <br>
+                <label for="predictResponse">Response</label>
+                <textarea id="predictResponse" class="output-box" placeholder="Prediction will appear here..." readonly></textarea>
+                <button id="resetButton">Reset</button>
+            </div>
+        </div>
+
+        <div  class="page" id="visualizations">
+            <div class="visualisation-section">
+                <h1><u>Visualisations</u></h1>
+                <div class="image-container">
+                    <div class="image-row">
+                        <div class="image-wrapper">
+                            <img src="static/images/Temperature.png" alt="Plot 1">
+                            <div class="hover-text">A region with high temperature variations is likely to experience more extreme heat events. Such areas may have larger differences between day and night temperatures, leading to greater discomfort and higher heat-related risks. The variability of temperatures can increase the intensity of heatwaves, leading to health impacts like heat exhaustion or heatstroke.</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="static/images/Carbon_emission.png" alt="Plot 2">
+                            <div class="hover-text">Higher carbon emissions contribute to climate change, leading to more extreme heat events, temperature fluctuations, and increased intensity of heatwaves. Carbon emissions from industrial activities, vehicles, and energy production contribute to global warming, which in turn intensifies heat stress on communities.</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="static/images/Air_quality.png" alt="Plot 3">
+                            <div class="hover-text">Air pollution can exacerbate heat-related health risks. During heatwaves, poor air quality worsens respiratory issues, increases the risk of cardiovascular diseases, and can lead to premature deaths. Additionally, the combination of air pollution and high temperatures can cause heat stress, especially in vulnerable populations.</div>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-wrapper">
+                            <img src="static/images/Rainfall.png" alt="Plot 4">
+                            <div class="hover-text">Regions with low rainfall are often more prone to extreme heat due to a lack of sufficient water resources for cooling. Water scarcity can heighten the effects of heatwaves, affecting human health, agriculture, and the environment. In areas with limited rainfall, the ability to cope with heat extremes becomes significantly harder.</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="static/images/Groundwater.png" alt="Plot 5">
+                            <div class="hover-text">Poor groundwater sustainability can worsen the effects of heatwaves by limiting water availability during droughts. In regions where groundwater levels are low or unsustainable, water scarcity becomes a critical issue, exacerbating the impacts of heatwaves on both people and agriculture.</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="static/images/Health.png" alt="Plot 6">
+                            <div class="hover-text">A strong healthcare system helps mitigate the impact of heatwaves by providing essential medical care, improving preparedness, and supporting vulnerable populations such as the elderly and those with pre-existing health conditions. Regions with better healthcare access can reduce mortality and morbidity during extreme heat events.</div>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div class="image-wrapper">
+                            <img src="static/images/Population.png" alt="Plot 7">
+                            <div class="hover-text">High population density increases heat exposure and strain on resources during heatwaves. More people in a small area means higher urban heat islands, reduced airflow, and limited green spaces for cooling. As a result, densely populated regions are more vulnerable to extreme heat effects due to overcrowded conditions and resource limitations.</div>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="static/images/Heatwave.png" alt="Plot 8">
+                            <div class="hover-text">The Heatwave Susceptibility Score (HSS) is a composite index that evaluates a region's vulnerability to extreme heat events. It is calculated using multiple environmental, demographic, and infrastructural factors that influence the severity of heatwaves and their impact on communities.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chatbot" class="page">
+            <br><br><h1><u>Conversational Model to assist at times of Heatwaves</u></h1>
+            <div class="chatbot-container">
+                <label for="userPrompt">Enter User Prompt</label>
+                <input type="text" id="userPrompt" placeholder="Enter User Prompt">
+                <button id="submitPromptButton">Submit Prompt</button>
+                <br><span id="submitLoading" class="loading-spinner" style="display: none;"></span><br>
+                <label for="backendResponse">Response</label>
+                <textarea id="backendResponse" class="output-box" placeholder="Backend response will appear here..." readonly></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

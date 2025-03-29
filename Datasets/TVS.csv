@@ -1,0 +1,32 @@
+State,Temperature(1901-2020),Temperature Variation Score,Category
+Andhra Pradesh,27.3124,1.0000,High Temperature Zone
+Arunachal,18.1743,0.6066,Moderate Temperature Zone
+Assam,22.8362,0.8073,High Temperature Zone
+Bihar,24.9433,0.8980,High Temperature Zone
+Chattisgarh,25.5412,0.9237,High Temperature Zone
+Goa,26.5489,0.9671,High Temperature Zone
+Gujarat,26.6283,0.9705,High Temperature Zone
+Haryana,24.5293,0.8802,High Temperature Zone
+Himachal Pradesh,9.3682,0.2274,Low Temperature Zone
+Jammu & Kashmir,8.8124,0.2035,Low Temperature Zone
+Jharkhand,24.5898,0.8828,High Temperature Zone
+Karnataka,25.7101,0.9310,High Temperature Zone
+Kerala,26.0528,0.9458,High Temperature Zone
+Madhya Pradesh,25.2672,0.9119,High Temperature Zone
+Maharashtra,26.4255,0.9618,High Temperature Zone
+Manipur,19.2897,0.6546,Moderate Temperature Zone
+Meghalaya,21.4213,0.7464,High Temperature Zone
+Mizoram,21.1796,0.7360,High Temperature Zone
+Nagaland,18.7635,0.6319,Moderate Temperature Zone
+Odhisha,25.5795,0.9254,High Temperature Zone
+Punjab,23.9696,0.8561,High Temperature Zone
+Rajasthan,25.4385,0.9193,High Temperature Zone
+Sikkim,4.0853,0.0000,Low Temperature Zone
+Tamilnadu ,27.0671,0.9894,High Temperature Zone
+Tripura,24.3702,0.8733,High Temperature Zone
+Uttar Pradesh,25.1493,0.9069,High Temperature Zone
+Uttarakhand,13.4953,0.4051,Moderate Temperature Zone
+West Bengal,25.3865,0.9171,High Temperature Zone
+,,,
+,,,
+,,,
